@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-[Raleway];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+        @apply text-lg;
+    }
+}
+    
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
