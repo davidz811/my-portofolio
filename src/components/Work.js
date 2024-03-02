@@ -22,12 +22,12 @@ const Work = () => {
                                 Gym Application
                             </span>
                             <div className='flex justify-center pt-8'>
-                                <a href='/'>
+                                <a href='https://gymexercises.davidcoldea.online/'>
                                     <button className='mr-5 text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/'>
+                                <a href='https://github.com/davidz811/gym_exercises'>
                                     <button className='text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
                                         Code
                                     </button>
@@ -46,12 +46,12 @@ const Work = () => {
                                 Travel Application
                             </span>
                             <div className='flex justify-center pt-8'>
-                                <a href='/'>
+                                <a href='https://travelapp.davidcoldea.online'>
                                     <button className='mr-5 text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/'>
+                                <a href='https://github.com/davidz811/travel-app'>
                                     <button className='text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
                                         Code
                                     </button>
@@ -70,12 +70,12 @@ const Work = () => {
                                 Crypto Application
                             </span>
                             <div className='flex justify-center pt-8'>
-                                <a href='/'>
+                                <a href='https://cryptoapp.davidcoldea.online/'>
                                     <button className='mr-5 text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/'>
+                                <a href='https://github.com/davidz811/crypto-app'>
                                     <button className='text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
                                         Code
                                     </button>
