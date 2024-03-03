@@ -4,11 +4,11 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-import Contact from "./components/Contact";  
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="w-full min-w-[480px]">
+    <div className="w-full min-w-[600px]">
       <Navbar />
       <Home />
       <About />

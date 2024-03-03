@@ -4,6 +4,12 @@ import cryptoimg from '../assets/cryptoImg.jpg';
 
 
 const Work = () => {
+    const projects = [
+        { image: gymimg, title: 'Gym Application', demo: 'https://gymexercises.davidcoldea.online', code: 'https://github.com/davidz811/gym_exercises' },
+        { image: travelimg, title: 'Travel Application', demo: 'https://travelapp.davidcoldea.online', code: 'https://github.com/davidz811/travel-app' },
+        { image: cryptoimg, title: 'Crypto Application', demo: 'https://cryptoapp.davidcoldea.online', code: 'https://github.com/davidz811/crypto-app' }
+    ];
+
     return (
         <div name='work' className='w-full h-screen bg-[#0a192f] text-gray-300'>
             <div className='max-w-[1000px] w-full h-full mx-auto flex flex-col justify-center'>
@@ -12,80 +18,29 @@ const Work = () => {
                     <p className='py-4 text-xl'>// Check out some recent work</p>
                 </div>
 
-                <div className='flex gap-6'>
-                    <div style={{ backgroundImage: `url(${gymimg})`, width: '460px' }}
-                        className='group shadow-lg shadow-[#040c16] container flex justify-center items-center mx-auto content-div'>
-
-                        {/* hover effects */}
-                        <div className='opacity-0 group-hover:opacity-100'>
-                            <span className='text-2xl font-bold text-gray-300 tracking-wider'>
-                                Gym Application
-                            </span>
-                            <div className='flex justify-center pt-8'>
-                                <a href='https://gymexercises.davidcoldea.online/'>
-                                    <button className='mr-5 text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
-                                        Demo
-                                    </button>
-                                </a>
-                                <a href='https://github.com/davidz811/gym_exercises'>
-                                    <button className='text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
-                                        Code
-                                    </button>
-                                </a>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+                    {projects.map((project, index) => (
+                        <div
+                            key={project.index}
+                            style={{ backgroundImage: `url(${project.image})` }}
+                            className='group shadow-lg shadow-[#040c16] container flex justify-center items-center mx-auto content-div'
+                        >
+                            <div className='opacity-0 group-hover:opacity-100'>
+                                <span className='text-xl font-bold text-gray-300 tracking-wider'>{project.title}</span>
+                                <div className='flex justify-center pt-8'>
+                                    <a href={project.demo}>
+                                        <button className='mr-5 text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>Demo</button>
+                                    </a>
+                                    <a href={project.code}>
+                                        <button className='text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>Code</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div style={{ backgroundImage: `url(${travelimg})`, width: '460px' }}
-                        className='group shadow-lg shadow-[#040c16] container flex justify-center items-center mx-auto content-div'>
-
-                        {/* hover effects */}
-                        <div className='opacity-0 group-hover:opacity-100'>
-                            <span className='text-2xl font-bold text-gray-300 tracking-wider'>
-                                Travel Application
-                            </span>
-                            <div className='flex justify-center pt-8'>
-                                <a href='https://travelapp.davidcoldea.online'>
-                                    <button className='mr-5 text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
-                                        Demo
-                                    </button>
-                                </a>
-                                <a href='https://github.com/davidz811/travel-app'>
-                                    <button className='text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
-                                        Code
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div style={{ backgroundImage: `url(${cryptoimg})`, width: '460px' }}
-                        className='group shadow-lg shadow-[#040c16] container flex justify-center items-center mx-auto content-div'>
-
-                        {/* hover effects */}
-                        <div className='opacity-0 group-hover:opacity-100'>
-                            <span className='text-2xl font-bold text-gray-300 tracking-wider'>
-                                Crypto Application
-                            </span>
-                            <div className='flex justify-center pt-8'>
-                                <a href='https://cryptoapp.davidcoldea.online/'>
-                                    <button className='mr-5 text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
-                                        Demo
-                                    </button>
-                                </a>
-                                <a href='https://github.com/davidz811/crypto-app'>
-                                    <button className='text-2xl bg-white text-gray-700 rounded-lg text-center font-bold p-2'>
-                                        Code
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

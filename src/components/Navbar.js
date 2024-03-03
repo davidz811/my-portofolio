@@ -147,7 +147,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[10px] duration-300 bg-[#565f69]'>
-            <a href='/' className='w-full flex justify-between items-center text-gray-300'>
+            <a href='https://resume.davidcoldea.online' className='w-full flex justify-between items-center text-gray-300'>
               Resume <BsFillPersonLinesFill size={30} />
             </a>
           </li>
