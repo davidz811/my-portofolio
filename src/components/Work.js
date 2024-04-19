@@ -5,7 +5,7 @@ import cryptoimg from '../assets/cryptoImg.jpg';
 
 const Work = () => {
     const projects = [
-        { image: gymimg, title: 'Gym Application', demo: 'https://gymexercises.davidcoldea.online', code: 'https://github.com/davidz811/gym_exercises' },
+        // { image: gymimg, title: 'Gym Application', demo: 'https://gymexercises.davidcoldea.online', code: 'https://github.com/davidz811/gym_exercises' },
         { image: travelimg, title: 'Travel Application', demo: 'https://travelapp.davidcoldea.online', code: 'https://github.com/davidz811/travel-app' },
         { image: cryptoimg, title: 'Crypto Application', demo: 'https://cryptoapp.davidcoldea.online', code: 'https://github.com/davidz811/crypto-app' }
     ];

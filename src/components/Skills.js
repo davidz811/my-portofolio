@@ -7,6 +7,7 @@ import firebase from '../assets/firebase.png';
 import tailwind from '../assets/tailwind.png';
 import node from '../assets/node.png';
 import postgres from '../assets/postgresfinal.svg';
+import spring from '../assets/new_spring.png';
 
 const Skills = () => {
     return (
@@ -37,8 +38,8 @@ const Skills = () => {
                         <p className='my-4'>React Js</p>
                     </div>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img src={firebase} alt='Firebase' className='mx-auto w-20' />
-                        <p className='my-4'>Firebase</p>
+                        <img src={spring} alt='Firebase' className='mx-auto w-20 rounded-sm' />
+                        <p className='my-4'>Java Spring Boot</p>
                     </div>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img src={tailwind} alt='Tailwind' className='mx-auto w-20' />
